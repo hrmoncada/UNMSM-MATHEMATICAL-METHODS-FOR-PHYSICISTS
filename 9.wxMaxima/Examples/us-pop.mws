@@ -1,0 +1,81 @@
+{VERSION 5 0 "IBM INTEL NT" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "" 0 1 0 128 128 1 2 0 1 0 0 0 
+0 0 0 1 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 1 2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Heading 1
+" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 1 1 1 }1 
+1 0 0 8 4 1 0 1 0 2 2 0 1 }{PSTYLE "Heading 2" -1 4 1 {CSTYLE "" -1 
+-1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 1 1 1 }1 1 0 0 8 2 1 0 1 0 2 2 
+0 1 }{PSTYLE "R3 Font 0" -1 256 1 {CSTYLE "" -1 -1 "Helvetica" 1 12 
+128 0 128 1 2 1 2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE 
+"R3 Font 2" -1 257 1 {CSTYLE "" -1 -1 "Courier" 1 11 0 128 128 1 2 1 
+2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Title" -1 258 
+1 {CSTYLE "" -1 -1 "Times" 1 24 0 0 0 1 2 1 1 2 2 2 1 1 1 1 }3 1 0 0 
+12 12 1 0 1 0 2 2 19 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "restart;\nwith(linal
+g):\nwith(inttrans):" }}}{EXCHG {PARA 258 "" 0 "" {TEXT -1 36 "Continu
+ation: Modeling US population" }}}{SECT 0 {PARA 3 "" 0 "" {TEXT -1 20 
+"About this worksheet" }}{SECT 1 {PARA 4 "" 0 "" {TEXT -1 15 "Author a
+nd Date" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 40 "Matthias Kawski\nArizon
+a State University" }}{PARA 0 "" 0 "" {URLLINK 17 "kawski@asu.edu" 4 "
+" "" }{TEXT -1 1 "\n" }{URLLINK 17 "http://math.asu.edu/~kawki" 4 "htt
+p://math.asu.edu/~kawki" "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 
+"" 0 "" {TEXT -1 43 "Original version: Fall 1995 MAPLE release 3" }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{SECT 1 {PARA 4 "" 0 "" {TEXT 
+-1 24 "Content, Purpose and Use" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 60 
+"MAT 274, Elementary Differential Equations, December 8, 1995" }}
+{PARA 0 "" 0 "" {TEXT -1 168 "Sample solutions for Final exam part I, \+
+differential equations part.\n\nPart of the Foundation Coalition integ
+rated program -- together w/ \nEEE Electrical circuits class." }}}}
+{SECT 1 {PARA 4 "" 0 "" {TEXT -1 33 "Updates and log of modifications.
+" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 60 "Summer 2005. Updated to releas
+e 8. minor formatting changes." }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 0 "" }}}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 11 "Data source" }}
+{EXCHG {PARA 0 "" 0 "" {URLLINK 17 "MATLAB pages: uspop.m" 4 "http://m
+ath.asu.edu/~kawski/MATLAB/matlab.html#innerprod" "" }{MPLTEXT 1 0 0 "
+" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 434 "function [t,p]=uspop()\n[T,P
+]=USPOP. US-population data, copied from \nHarvard Calculus Consortium
+. 21 data points\n from 1790 to 1990. Population in millions.\n\nAccor
+ding to Lomen/Lovelock's DE text, a rather\nsurpringly good fit is bas
+ed on the observation \nthat (dP/dt)/P is nearly linear in t.\n\nt=[17
+90:10:1990];\np=[3.9 5.3 7.2 9.6 12.9 17.1 23.1 31.4 ...\n   38.6 50.2
+ 62.9 76.0 92 105.7 122.8  ...\n   131.7 150.7 179 205 226.5 248.7];" 
+}{MPLTEXT 1 0 0 "" }}}}{SECT 1 {PARA 3 "" 0 "" {TEXT -1 36 "Continuati
+on: Modeling US population" }}{EXCHG {PARA 0 "" 0 "" {TEXT -1 75 "Cont
+inuation of modeling the population growth of the US from 1800 to 2000
+," }}{PARA 0 "" 0 "" {TEXT -1 40 "compare the MATLAB \"modeling from d
+ata\"." }}{PARA 0 "" 0 "" {TEXT -1 75 "(We could as well have plotted \+
+and fitted the data in MAPLE, or numerically" }}{PARA 0 "" 0 "" {TEXT 
+-1 67 "solved and plotted the DEs in MATLAB -- these are good exercise
+s!)." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 
+0 63 "with(DEtools):\nDElog:=diff(P(t),t)= P(t)*(.028 - .00008 *P(t));
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "dsolve(\{DElog,P(1800)=
+5.3\},P(t));" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 66 "DEplot(DElo
+g,P(t),1800..2000,\{[1800,5.3]\},\n       linecolor=blue);" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 50 "DEt:=diff(P(t),t)= P(t)*(.032 - .00
+012 *(t-1800));" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 64 "DEplot(D
+Et,P(t),1800..2000,\{[1800,5.3]\},\n       linecolor=blue);" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 88 "Note that in this model, once t is
+ sufficiently large, the growth rate becomes negative!" }}{PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 35 "solve(.032 - .00012 *(t-1800)=0,t);" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 192 "Consequently this model would pre
+dict that the population dies out just as quickly as it grew. \nClearl
+y, we are far overstepping the time range in which this model predicts
+ reasonable numbers." }}{PARA 0 "" 0 "" {TEXT -1 177 "Note, that if we
+ do not increase the number of points, and go too far into the future \+
+the numerical \nsolution methods essentially crash (commands on bottom
+ -- do not do this!). " }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 75 "DEplot(DE
+t,P(t),1800..2350,\{[1800,5.3]\},\n       linecolor=blue,stepsize=1);
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 75 "DEplot(DEt,P(t),1800..3
+800,\{[1800,5.3]\},\n       linecolor=blue,stepsize=1);" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 101 "Now ehre is a weird response from MAPLE \+
+-- the curve does not at all agree\nwith the slope field......" }
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 64 "DEplot(
+DEt,P(t),1800..2820,\{[1800,5.3]\},\n       linecolor=blue);" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 75 "DEplot(DEt,P(t),1800..3800,
+\{[1800,5.3]\},\n       linecolor=blue,stepsize=1);" }}}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 82 "Personally, I am not very impressed with either
+ model, but the time-dependent rate" }}{PARA 0 "" 0 "" {TEXT -1 75 "ap
+pears to fit the data a little better than the population-dependent ra
+te!" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}}{MARK "0 0 0" 22 }
+{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }
